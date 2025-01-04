@@ -9,8 +9,6 @@ const cors = require("cors");
 const { error } = require("console");
 
 
-// Backend: https://urban-muse-o8oh.vercel.app/
-
 app.use(express.json());
 app.use(cors());
 
