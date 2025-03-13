@@ -34,7 +34,7 @@ const AddProduct = () =>{
          formData.append('product',image);
 
 
-         await fetch('http://localhost:4000/upload', {
+         await fetch('https://urbanmuse.onrender.com/upload', {
             method: 'POST',
             headers: {
               Accept: 'application/json',
