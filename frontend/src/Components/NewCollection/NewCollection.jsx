@@ -8,7 +8,7 @@ const NewCollection = () => {
     const [new_collection,setNew_collection]=useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:4000/newcollection')
+        fetch('https://urbanmuse.onrender.com/newcollection')
         .then((response)=>response.json())
         .then((data)=>setNew_collection(data));
     },[])
