@@ -65,7 +65,7 @@ const upload = multer({storage:storage})
 app.use('/images', express.static('upload/images'));
 
 app.post("/upload", upload.single('product'), (req, res) => {
-  const imageUrl = `http://localhost:${port}/images/${req.file.filename}`; // Adjust path if needed
+  const imageUrl = `https://urbanmuse.onrender.com/${req.file.filename}`; // Adjust path if needed
   res.json({
     success: 1,
     image_url: imageUrl,
